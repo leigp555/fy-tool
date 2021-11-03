@@ -1,23 +1,33 @@
-.content{
-    position: relative;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .content{
-    color: orange;
-    position: absolute;
-    left: 50%;
-    top: 40Vh;
-    transform: translateX(-50%);
+    width: 50vw;
+    height: 50vh;
+    margin-top: 10vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-button{
-    color:blue;
+#lastContent,#translateResult{
+    border: 1px solid orange;
+    width: 100%;
+    height: 12vh;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: orange;
+}
+.input{
+    align-self: center;
 }
 #translateContent{
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid red;
-    height: 1.6em;
-}
-#span{
-    top: 15vh;
-    transform: translateX(-120px);
+    height: 2em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
 }

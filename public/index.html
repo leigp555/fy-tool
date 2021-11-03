@@ -10,19 +10,27 @@
 </head>
 <body>
 <div class="content">
+    <div  class="input">
     <form id="ts">
-        <label for="">
-            <span>请输入需要翻译的内容</span>
+        <label>
+            <span style="color: red">请输入需要翻译的内容</span>
             <br>
             <input type="text" id="translateContent">
         </label>
-        <button id="button" type="submit">翻译</button>
+        <button id="button" type="submit" style="color: blue">翻译</button>
     </form>
-    <div class="content" id="span">
-        <span id="lastContent"></span>
+    </div>
+    <div class="origin">
+        <h5>原文内容:</h5>
+        <br>
+        <div id="lastContent"></div>
+    </div>
+    <div class="result">
+       <h5> 翻译内容:</h5>
+        <br>
+        <div id="translateResult"></div>
     </div>
 </div>
-
 <script src="main.js"></script>
 </body>
 </html>
