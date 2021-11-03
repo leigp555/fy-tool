@@ -1,0 +1,23 @@
+.content{
+    position: relative;
+}
+.content{
+    color: orange;
+    position: absolute;
+    left: 50%;
+    top: 40Vh;
+    transform: translateX(-50%);
+}
+button{
+    color:blue;
+}
+#translateContent{
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid red;
+    height: 1.6em;
+}
+#span{
+    top: 15vh;
+    transform: translateX(-120px);
+}
