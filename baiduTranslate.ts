@@ -8,7 +8,7 @@ const password = secret
 const salt = Math.random()
 let result
 
-export const translate = (word: string) => {
+export const baiduTranslate = (word: string) => {
     return new Promise((resolve, reject) => {
         let from, to;
         if (/[a-zA-Z]/.test(word) === true) {

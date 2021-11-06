@@ -3,7 +3,7 @@ import {IncomingMessage, ServerResponse} from "http";
 import * as p from "path";
 import * as fs from "fs";
 import {URL} from "url";
-import {translate} from "./translate";
+import {baiduTranslate} from "./baiduTranslate";
 
 
 const pubPath = p.resolve(__dirname, "public")
@@ -18,7 +18,7 @@ server.on("request", (request: IncomingMessage, response: ServerResponse) => {
         })
         request.on("end", () => {
             const requestDate = Buffer.concat(arr).toString()
-            translate(requestDate).then((data)=>{
+            baiduTranslate(requestDate).then((data)=>{
                 response.end(data)
             })
             console.log(requestDate)
